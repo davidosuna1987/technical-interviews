@@ -18,11 +18,11 @@ jobs:
           cache: 'yarn'
       - run: yarn install --frozen-lockfile
 
-      - name: Unit Tests (using Jest)
-        run: yarn test:unit
-
       - name: UI-Unit Tests (using React-Testing Lib & Storybook)
         run: yarn test:ui-jest
+
+      - name: Unit Tests (using Jest)
+        run: yarn test:unit
 
   deploy:
     name: 'Deploy'
