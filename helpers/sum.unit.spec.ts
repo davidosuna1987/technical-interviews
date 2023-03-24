@@ -1,4 +1,4 @@
-import { sum } from "../helpers/sum";
+import { sum } from "./sum";
 
 describe("sum", () => {
   it("should return the sum of two numbers", () => {
